@@ -8,7 +8,7 @@ const CreateCategory = () => {
     name: "",
     nameNepali: "",
     icon: "",
-    subcategories: "",
+    // subcategories: "",
   });
   const [imageFile, setImageFile] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -32,16 +32,16 @@ const CreateCategory = () => {
       payload.append("name", form.name);
       payload.append("nameNepali", form.nameNepali);
       payload.append("icon", form.icon);
-     payload.append(
-  "subcategories",
-  JSON.stringify(
-    form.subcategories
-      .split(",")
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .map((s) => ({ name: s }))   // ✅ FIX HERE
-  )
-);
+//      payload.append(
+//   "subcategories",
+//   JSON.stringify(
+//     form.subcategories
+//       .split(",")
+//       .map((s) => s.trim())
+//       .filter(Boolean)
+//       .map((s) => ({ name: s }))   // ✅ FIX HERE
+//   )
+// );
 
       
       if (imageFile) payload.append("image", imageFile);
@@ -98,7 +98,7 @@ const CreateCategory = () => {
           onChange={handleFileChange}
           className="w-full"
         />
-
+{/* 
         <textarea
           name="subcategories"
           placeholder="Subcategories (comma separated)"
@@ -106,7 +106,7 @@ const CreateCategory = () => {
           onChange={handleChange}
           className="w-full border px-3 py-2 rounded"
           rows={3}
-        />
+        /> */}
 
         <button
           disabled={loading}
