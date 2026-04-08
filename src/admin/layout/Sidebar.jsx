@@ -19,7 +19,7 @@ const Sidebar = () => {
     <aside className="w-64 h-screen bg-white fixed left-0 top-0 border-r">
       {/* Logo */}
       <div className="h-16 flex items-center justify-center text-xl font-bold border-b">
-        Hardware Admin
+       Jagadamba Hardware Admin
       </div>
 
       <nav className="p-4 space-y-2">

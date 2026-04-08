@@ -293,7 +293,7 @@ const AdminLogin = () => {
         {/* Title */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-800">
-            Hardware Admin Panel
+            Jagadamba Hardware Admin Panel
           </h2>
           <p className="text-gray-500 mt-2 text-sm">
             Secure Login Access
